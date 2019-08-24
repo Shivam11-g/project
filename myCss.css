@@ -1,0 +1,16 @@
+body{
+	background:  url("background.png");
+	background-size: 100%;
+}
+.nav{
+	text-decoration: none;
+	font-weight: bolder;
+	font-family: "Times New Roman";
+	color: #ff0011;
+}
+.navbar{
+	text-decoration: none;
+	font-weight: bolder;
+	font-family: "AR BLANCA";
+	color: #00F1BA;
+}
