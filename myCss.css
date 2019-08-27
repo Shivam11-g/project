@@ -6,17 +6,26 @@ body{
 }
 h1{
 	text-align: center;
-	text-decoration-color: white;
 	font-size: 500%;
+	color: #f0f0f0
 }
-p,h2,h4{
+p,h4{
 	padding-left: 30px;
+	
+}
+h2{
+	padding-left: 30px;
+	padding-top: 10px;
+
+}
+.r3height{
+	height: 240px;
 }
 .mainbackground{
 	background-color: #d4d4d4;
 	border-radius: 30px;
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- background-image: linear-gradient(to bottom right,#d4d4d4, #f4f4f4);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-image: linear-gradient(to bottom right,#d4d4d4, #f4f4f4);
 }
 .nav{
 	background-color: #4CAF50; 
@@ -31,12 +40,38 @@ p,h2,h4{
   left: 500px ;
 transition-duration: 0.5s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-  }
+}
+.float1{
+	  float: left;
+}
+.float2{
+	float: right;
+}
+.button0{
+	text-align: center;
+	 padding-right: 1000px;
+	  padding-bottom: 100px;
+}
+.footer{
+	padding-top: 30px;
+}
   .nav:hover{
   	background-color: #4CAF50;
   color: white;
 border-radius: 30px;
+  }
+  .social{
+  	padding: 10px 10px 10px 10px; 
+  	text-decoration: none;
+  }
+  .social0{
+  	text-align: center;background-color: grey;
+  	border-top-right-radius: 30px;
+  	border-top-left-radius: 30px;
+
+  }
+  .foot{
+  	text-align: center;text-decoration: none;background-color: grey;
   }
 
   .csi{
@@ -44,17 +79,18 @@ text-decoration: none;
 	font-weight: bolder;
 	font-family: "Times New Roman";
 	color: grey;
-
+padding: 10px 10px 10px 10px;
+position: fixed;
+font-size: 25px;
   }
-}
+
 a{
 	text-decoration: none;
 	text-align: center;
 }
 @keyframes animi{
-	from{transform: rotate(0deg);}
-	to{transform: rotate(720deg);}
-
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(720deg);}
 }
 @keyframes inc{
 	from{transform: scale(0,0);}
@@ -63,11 +99,17 @@ a{
 
 .rot:hover{
 	animation: inc 1.5s ;
+transform: scale(1,1);
 
 	animation: animi 1.5s  ;
-
 }
-
+.rule{
+	padding-top: 65px;
+}
+.vac{
+	font-size: 60%;
+	padding: 80px 350px 80px 350px;
+}
 .logo{
 
   text-align: center;
@@ -95,7 +137,7 @@ padding-top: 100px;
 
 }
 a:hover {
-	color: orange;
+	color: black;
 	font-size: 150%;
 
 }
@@ -134,18 +176,34 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 border-radius: 30px;
 }
 
-.filter {filter: sepia(100%);}
+.filter {
+border-top-right-radius: 30px;
+ border-top-left-radius: 30px;
+
+	filter: sepia(100%);
+}
 
 
 
 .image {
   opacity: 1;
   transition: .5s ease;
+  float: right; 
+  border-radius: 30px;
+
 }
 
 
 
 .image:hover {
-  opacity: 0.3;
+  opacity: 0.45;
 }
+
+.pad{
+	float: right;
+}
+
+
+
+
 
