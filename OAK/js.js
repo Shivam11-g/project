@@ -13,7 +13,7 @@ function showSlides() {
   
   slides[slideIndex-1].style.display = "block";  
   
-  setTimeout(showSlides, 7000); // Change image every 7 seconds
+  setTimeout(showSlides, 6000); // Change image every 7 seconds
 }
 function openNav() {
   document.getElementById("mySidenav").style.width = "400px";
@@ -67,5 +67,5 @@ function myFunction(x) {
 
 function linkanimi(){
  var a= document.getElementsByClassName("link");
- a.style.linkanimi();
+ 
 }

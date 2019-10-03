@@ -260,9 +260,7 @@ margin: 10px;
   float: right;
   margin-top:30px;
   margin-bottom:200px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  overflow: hidden;
+
 }
 .overflow{
    overflow-x: hidden;
@@ -271,22 +269,44 @@ margin: 10px;
   margin: -30px;
   background-color: #7beec7;
   position: relative;
- 
+ height: 440px;
+ width: 400px;
 }
 .slideup{
-float: right;
+ position: relative;
 z-index: 1;
-
-}
-
-.slideup:hover{
-  position: relative;
-  animation: slideup 3s;
+background-color: transparent;
+margin-bottom: -15px;
+left: 20px;
+ 
 }
 @keyframes slideup{
-  from{bottom: 10px;}
-  to{bottom: 500px;}
+  0%{bottom: 10px;}
+  100%{bottom: 110px;}
 }
+.overflow:hover .slideup{
+ 
+ animation: slideup  .5s ;
+  bottom: 110px;
+ 
+}
+.overflow:hover .upperBorder{
+   animation:  upperborder ease  .6s ;
+   left: 5px;
+}
+.overflow:hover .leftBorder{
+   animation : leftBorder ease  .6s ;
+  top: 20px;
+}
+.overflow:hover .rightBorder{
+   animation:  rightBorder ease  .6s ;
+top: 10px;
+}
+.overflow:hover .bottomBorder{
+  animation:  bottomBorder ease  .6s ;
+  left: 0px;
+}
+
 
 
 @media screen and (max-height: 450px) {
@@ -304,7 +324,6 @@ overflow-x: hidden;
   opacity: 0.3;
   cursor:  url("cursor.png"),auto;
   position: relative;
-  animation: upperborder 2s;
   
 }
 
@@ -312,16 +331,58 @@ overflow-x: hidden;
   from{transform: scale(1);}
     to{transform: scale(1.05);}
 }
-
+.bottomBorder{
+  z-index: 1;
+  background-color: #353535;
+  position: absolute;
+  height: 3px;
+  width: 400px;
+  top: 407px;
+  left: 325px;
+}
+@keyframes bottomBorder{
+  0%{left: 325px;}
+  100%{left: 0px;}
+}
+.rightBorder{
+  z-index: 1;
+  background-color: #353535;
+  position: absolute;
+height: 400px;
+width: 3px;
+top: -370px;
+left: 322px;
+}
+@keyframes rightBorder{
+  from{top:-370px;}
+  to{top: 10px;}
+}
+.leftBorder{
+  position: absolute;
+  height: 400px;
+  width: 3px;
+  top:410px;
+  left: 5px;
+  z-index: 1;
+  background-color: #353535;
+}
+@keyframes leftBorder{
+  0%{top: 400px;}
+  100%{top: 20px;}
+}
 .upperBorder{
 position: absolute;
-height: 10px;
-width: 300px;
+height: 3px;
+width: 350px;
 margin-right: 0px;
+top: 30px;
+left: -345px; 
+z-index: 1;
+background-color: #353535;
 }
 @keyframes upperborder{
-0%{margin-right: -50px;}
-100%{margin-right: 10px;}
+0%{left: -345px;}
+100%{left: 5px;}
 }
 hr{
   width: 40px; 
