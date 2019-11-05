@@ -63,9 +63,10 @@ function topFunction() {
 //FOR BUTTONS (animated buttons)
 function myFunction(x) {
   x.classList.toggle("change");
+  var a= document.getElementsByClassName("link");
+ a.classList.toggle("linkanimi");
 }
 
 function linkanimi(){
- var a= document.getElementsByClassName("link");
  
 }

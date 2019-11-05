@@ -162,10 +162,11 @@ a{
 .link{
    position: absolute;
   left:-500px;
+  animation: linkanimi 1s;
 }
 
 .linkanimi{
- animation: linkanimi 1s;
+ 
 }
 
 @keyframes linkanimi{
